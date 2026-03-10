@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Kumar | Software Developer</title>
+    <meta name="description" content="Portfolio of Harsh Kumar, a Computer Science student, builder, and problem solver.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Harsh<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section-spacing">
+            <div class="container hero-content">
+                <div class="hero-text reveal">
+                    <p class="greeting">Hi, my name is</p>
+                    <h1 class="name">Harsh Kumar.</h1>
+                    <h2 class="tagline">Computer Science Student <span class="accent-text">|</span> Builder <span class="accent-text">|</span> Problem Solver</h2>
+                    <p class="intro">
+                        I’m a Computer Science student who enjoys building technical systems and learning new technologies. 
+                        My interests include software development, IoT systems, and cybersecurity concepts.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="btn btn-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal reveal-delay-1">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-body">
+                            <pre><code><span class="keyword">const</span> <span class="variable">developer</span> <span class="operator">=</span> {
+  <span class="property">name</span>: <span class="string">'Harsh Kumar'</span>,
+  <span class="property">role</span>: <span class="string">'Software Engineer'</span>,
+  <span class="property">passions</span>: [
+    <span class="string">'Building Projects'</span>,
+    <span class="string">'Cybersecurity'</span>,
+    <span class="string">'System Design'</span>
+  ],
+  <span class="function">solveProblem</span>: <span class="keyword">function</span>() {
+    <span class="keyword">return</span> <span class="string">"Challenge Accepted"</span>;
+  }
+};</code></pre>
+                        </div>
+                    </div>
+                    <div class="glow-bg"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-spacing">
+            <div class="container">
+                <h2 class="section-title reveal">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text reveal">
+                        <p>
+                            Driven by a deep curiosity for technology, I am constantly exploring how things work behind the scenes. 
+                            I strongly believe in <strong>learning by building projects</strong> and adopting a hands-on approach to problem-solving. 
+                            Whether it's diving into system internals or crafting modern applications, my mindset is wired to architect robust solutions.
+                        </p>
+                        <p>
+                            As a 3rd year BTech Computer Science student, I've cultivated a strong foundation in systems development and cybersecurity. 
+                            Beyond academic coursework, my experience ranges from developing hardware-integrated IoT solutions to leading client projects 
+                            as a freelance creative designer—where I handled everything from initial outreach and requirement gathering to design and final delivery.
+                        </p>
+                        <div class="highlight-stats mt-4">
+                            <div class="stat-item">
+                                <i class="fas fa-code"></i>
+                                <span><strong>650+</strong> LeetCode Problems</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-trophy"></i>
+                                <span><strong>1683</strong> LeetCode Rating</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-star"></i>
+                                <span>Tata Imagination Challenge Semifinalist (Top 2-3%)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image-wrapper reveal reveal-delay-1">
+                        <div class="about-image-placeholder">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <div class="frame"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-spacing bg-alt">
+            <div class="container">
+                <h2 class="section-title reveal">My Skills</h2>
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="skill-category reveal">
+                        <div class="category-header">
+                            <i class="fas fa-terminal"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Python</span>
+                        </div>
+                    </div>
+
+                    <!-- Web Technologies -->
+                    <div class="skill-category reveal reveal-delay-1">
+                        <div class="category-header">
+                            <i class="fas fa-globe"></i>
+                            <h3>Web & Mobile</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Flutter</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-category reveal reveal-delay-2">
+                        <div class="category-header">
+                            <i class="fas fa-database"></i>
+                            <h3>Databases</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Firebase Firestore</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div class="skill-category reveal reveal-delay-3">
+                        <div class="category-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Tools & Platforms</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Arduino IDE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-spacing">
+            <div class="container">
+                <h2 class="section-title reveal">Featured Projects</h2>
+                <div class="projects-grid">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card reveal">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div class="project-type">IoT & Mobile</div>
+                                <div class="project-links">
+                                    <a href="#" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                                    <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Jal Sarthi: Smart Water Quality Monitoring System</h3>
+                            <div class="project-description">
+                                <p>An IoT-based system designed to monitor water quality parameters in real time. Led a 3-member team managing task delegation and project execution.</p>
+                                <ul>
+                                    <li>Monitors turbidity, TDS, and temperature using IoT sensors.</li>
+                                    <li>Implements fault-tolerant architecture ensuring reliable data transmission even during connection disruptions.</li>
+                                    <li>Uses Firebase Firestore for real-time cloud logging.</li>
+                                    <li>Includes a Flutter Android application for monitoring and visualization.</li>
+                                    <li>Handles 100+ readings per minute and improved monitoring accuracy by 30%.</li>
+                                </ul>
+                                <p class="highlight-note"><i class="fas fa-lightbulb text-accent"></i> Resulted in a research paper and patent submission.</p>
+                            </div>
+                            <div class="project-tech-stack">
+                                <span>Arduino</span>
+                                <span>Firebase Firestore</span>
+                                <span>Flutter</span>
+                                <span>IoT Sensors</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card reveal reveal-delay-1">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div class="project-type">Systems & Tooling</div>
+                                <div class="project-links">
+                                    <a href="#" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Mini-Git</h3>
+                            <div class="project-description">
+                                <p>A small Python project built to understand how version control systems like Git work internally. This is a learning project currently under development.</p>
+                                <ul>
+                                    <li>Understanding commit structures and content-addressable storage.</li>
+                                    <li>Implementing file tracking concepts.</li>
+                                    <li>Managing version history and object traversal.</li>
+                                    <li>Building a basic command-line interface for version operations.</li>
+                                </ul>
+                            </div>
+                            <div class="project-tech-stack">
+                                <span>Python</span>
+                                <span>CLI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements section-spacing bg-alt">
+            <div class="container">
+                <h2 class="section-title reveal">Achievements</h2>
+                <div class="achievement-cards">
+                    <div class="achievement-card reveal">
+                        <div class="achievement-icon code-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Competitive Programming</h3>
+                        <p>Solved <strong>650+</strong> algorithmic problems on LeetCode.</p>
+                        <p class="rating-text">Global Rating: <span class="rating-badge">1683</span></p>
+                    </div>
+                    <div class="achievement-card reveal reveal-delay-1">
+                        <div class="achievement-icon trophy-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3>Tata Imagination Challenge</h3>
+                        <p><strong>Semifinalist</strong> in the prestigious national competition.</p>
+                        <p class="rating-text">Ranked in the <strong>Top 2-3%</strong> nationwide.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-spacing">
+            <div class="container">
+                <div class="contact-wrapper reveal">
+                    <h2 class="contact-title">Get In Touch</h2>
+                    <p class="contact-desc">
+                        I'm currently looking for new opportunities, internships, and entry-level roles. 
+                        Whether you have a question, a project idea, or just want to say hi, I'll try my best to get back to you!
+                    </p>
+                    <a href="mailto:your.email@example.com" class="btn btn-primary btn-large">Say Hello</a>
+                    
+                    <div class="social-links mt-4">
+                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:your.email@example.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Designed & Built by Harsh Kumar</p>
+            <p class="footer-tech">html &middot; css &middot; vanilla js</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
