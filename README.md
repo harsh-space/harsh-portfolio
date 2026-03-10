@@ -38,9 +38,3 @@ You can view this website without any complex setups!
 2. Open the folder.
 3. Double-click on `index.html` to open it in your browser.
 *(Alternatively, you can open it using the "Live Server" extension in VS Code for live reloading).*
-
-## 📫 Contact Me
-
-Are you looking to collaborate or want to chat about tech? Reach out to me!
-- **Email**: *[Your Email Here]*
-- **LinkedIn**: *[Your LinkedIn Link Here]*
