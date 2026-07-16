@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
        Navbar Scroll Effect
        ========================================== */
     const navbar = document.getElementById('navbar');
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const targetId = this.getAttribute('href');
-            
+
             // Skip if it's just "#"
             if (targetId === '#') return;
 
@@ -96,11 +96,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', () => {
         let current = '';
-        
+
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
-            
+
             // Adjust to trigger section switch accurately
             if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
                 current = section.getAttribute('id');

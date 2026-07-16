@@ -242,7 +242,7 @@ img {
     width: 100%;
     height: 80px;
     z-index: 1000;
-    background-color: rgba(251, 245, 230, 0.92);
+    background-color: rgba(251, 245, 230, 0.98);
     backdrop-filter: blur(12px);
     transition: all var(--transition-normal);
     border-bottom: 1px solid transparent;
@@ -251,7 +251,7 @@ img {
 #navbar.scrolled {
     height: 70px;
     border-bottom: 1px solid var(--border-color);
-    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 25px -12px rgba(61, 40, 16, 0.25);
 }
 
 .nav-container {
@@ -375,10 +375,11 @@ img {
    Hero Section
    ========================================================================== */
 .hero {
-    min-height: 100vh;
+    min-height: min(100vh, 780px);
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 120px;
+    padding-bottom: 60px;
 }
 
 .hero-content {
@@ -512,12 +513,16 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 120%;
-    height: 120%;
+    width: 110%;
+    height: 110%;
     background: radial-gradient(circle, var(--gradient-glow) 0%, transparent 60%);
     z-index: -1;
     filter: blur(40px);
     opacity: 0.5;
+}
+
+.hero {
+    overflow: hidden;
 }
 
 /* ==========================================================================
